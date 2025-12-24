@@ -9,7 +9,7 @@ services:
     volumes:
       - ./app:/var/www/html
       - vendor_data:/var/www/html/vendor
-      - /mnt/windows_share:/mnt/windows_share
+      - /mnt/archivo_digitalizado:/mnt/archivo_digitalizado
     restart: unless-stopped
 
 volumes:
