@@ -1,0 +1,9 @@
+{
+    "name": "miguel/files-browser",
+    "description": "Minimal file browser using .env (LOCAL mode).",
+    "type": "project",
+    "require": {
+      "vlucas/phpdotenv": "^5.6"
+    }
+  }
+  

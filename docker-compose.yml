@@ -1,0 +1,16 @@
+services:
+  files-browser:
+    build: .
+    container_name: files-browser
+    ports:
+      - "8080:80"
+    env_file:
+      - ./.env
+    volumes:
+      - ./app:/var/www/html
+      - vendor_data:/var/www/html/vendor
+      - ./data:/mnt/windows_share
+    restart: unless-stopped
+
+volumes:
+  vendor_data:
